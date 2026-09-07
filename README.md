@@ -21,16 +21,14 @@
 
 ```text
 quick-booking-api/
-├── app/
-│   ├── api/          # Роуты и эндпоинты
-│   ├── core/         # Конфигурация приложения
-│   ├── models/       # Модели базы данных
-│   ├── schemas/      # Pydantic-схемы (валидация)
-│   └── services/     # Бизнес-логика проверки броней
-├── static/           # Скрипты, стили и Zebra Datepicker
-├── templates/        # HTML-шаблоны
-├── main.py           # Точка входа приложения
-├── requirements.txt
+├── backend/
+│   ├── main.py               # Сервер FastAPI, роуты и валидация
+│   └── requirements.txt      # Зависимости проекта
+├── frontend/
+│   ├── index.html            # Форма выбора дат
+│   ├── js/                   # Скрипты и Zebra Datepicker
+│   └── css/                  # Стили интерфейса
+├── .gitignore
 └── README.md
 ``` 
 
